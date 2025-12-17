@@ -1,12 +1,12 @@
 "use client";
-import { Github, Play, Cpu, Database, CreditCard, Sparkles, ShieldCheck, Zap, Users } from "lucide-react";
+import { Github, Play, Cpu, Database, CreditCard, Sparkles, ShieldCheck, Zap, Users, ExternalLink } from "lucide-react";
 
 export default function ProjectCard() {
   return (
     <section id="projects" className="py-24 px-6 max-w-7xl mx-auto">
       <div className="relative group bg-white/[0.02] border border-white/5 rounded-[3rem] p-8 md:p-12 overflow-hidden backdrop-blur-3xl">
         
-        {/* Glow hiệu ứng nền */}
+        {/* Glow hiệu ứng nền đậm chất hệ thống */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/10 blur-[120px] -z-10" />
 
         <div className="flex items-center gap-4 mb-12">
@@ -29,11 +29,11 @@ export default function ProjectCard() {
                 LiteFlow ERP
               </h3>
               <p className="text-gray-400 text-lg leading-relaxed font-light max-w-lg">
-                Giải pháp quản trị doanh nghiệp tập trung, tối ưu hóa vận hành nhà hàng thông qua <span className="text-white font-medium">Auto-Query AI</span> và xử lý giao dịch <span className="text-purple-400">VNPAY</span> bảo mật.
+                Hệ thống quản trị tài nguyên doanh nghiệp tập trung, tối ưu hóa vận hành nhà hàng thông qua <span className="text-white font-medium">Auto-Query AI</span> và xử lý giao dịch <span className="text-purple-400">VNPAY</span> bảo mật.
               </p>
             </div>
 
-            {/* Team & Contribution Section */}
+            {/* Team & Contribution Section - Thể hiện tư duy Lead */}
             <div className="grid grid-cols-2 gap-8 py-8 border-y border-white/5">
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.4em] text-gray-500">
@@ -47,27 +47,27 @@ export default function ProjectCard() {
               </div>
             </div>
 
-            {/* My Responsibilities */}
+            {/* My Responsibilities - Chi tiết đóng góp chuyên môn */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-start gap-3 p-4 bg-white/[0.03] border border-white/5 rounded-2xl group/item hover:bg-white/[0.05] transition-colors">
                 <Sparkles className="text-purple-500 shrink-0" size={18} />
                 <p className="text-[11px] leading-relaxed text-gray-400">
-                  <b className="text-gray-200">Backend Lead:</b> Thiết kế Database, xây dựng 40+ REST APIs và tích hợp Groq AI.
+                  <b className="text-gray-200">Backend Lead:</b> Thiết kế Database Architecture, xây dựng 40+ RESTful APIs lõi.
                 </p>
               </div>
               <div className="flex items-start gap-3 p-4 bg-white/[0.03] border border-white/5 rounded-2xl group/item hover:bg-white/[0.05] transition-colors">
                 <ShieldCheck className="text-blue-500 shrink-0" size={18} />
                 <p className="text-[11px] leading-relaxed text-gray-400">
-                  <b className="text-gray-200">Payment:</b> Trực tiếp triển khai luồng thanh toán VNPAY IPN bảo mật cao.
+                  <b className="text-gray-200">Payment:</b> Trực tiếp tích hợp luồng VNPAY IPN đảm bảo tính chính xác giao dịch 100%.
                 </p>
               </div>
             </div>
 
-            {/* Technical Stack */}
+            {/* Technical Stack Labels */}
             <div className="space-y-4">
               <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500">// TECHNICAL STACK</h4>
               <div className="flex flex-wrap gap-2">
-                {["Spring Boot 3.x", "SQL Server", "Groq AI", "VNPAY SDK", "Next.js"].map((tech) => (
+                {["Spring Boot 3.x", "SQL Server", "Groq AI Agent", "VNPAY SDK", "Next.js"].map((tech) => (
                   <span key={tech} className="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold text-gray-300 hover:text-purple-400 transition-colors">
                     {tech}
                   </span>
@@ -75,13 +75,22 @@ export default function ProjectCard() {
               </div>
             </div>
 
-            {/* Action Buttons */}
+            {/* Action Buttons - SỬA LẠI LINK DẪN TRỰC TIẾP VÀO CODE */}
             <div className="flex flex-wrap gap-6 pt-4">
-              <a href="https://youtu.be/IKlgj9m4Y84" target="_blank" className="flex items-center gap-3 px-10 py-4 bg-[#ff0000] text-white rounded-full font-black text-[10px] tracking-widest uppercase hover:scale-105 transition-all shadow-lg shadow-red-500/20">
+              <a 
+                href="https://youtu.be/IKlgj9m4Y84" 
+                target="_blank" 
+                className="flex items-center gap-3 px-10 py-4 bg-[#ff0000] text-white rounded-full font-black text-[10px] tracking-widest uppercase hover:scale-105 transition-all shadow-lg shadow-red-500/20"
+              >
                 <Play size={16} fill="white" /> WATCH DEMO
               </a>
-              <a href="https://github.com/Kha-Noob" target="_blank" className="flex items-center gap-3 px-10 py-4 bg-white/5 border border-white/10 text-white rounded-full font-black text-[10px] tracking-widest uppercase hover:bg-white/10 transition-all">
-                <Github size={16} /> REPOSITORY
+              <a 
+                href="https://github.com/Kha-Noob/portfolio/tree/main/src" 
+                target="_blank" 
+                className="flex items-center gap-3 px-10 py-4 bg-white/5 border border-white/10 text-white rounded-full font-black text-[10px] tracking-widest uppercase hover:bg-white/10 transition-all group/btn"
+              >
+                <Github size={16} /> VIEW SOURCE CODE 
+                <ExternalLink size={12} className="opacity-0 group-hover/btn:opacity-100 transition-opacity" />
               </a>
             </div>
           </div>
@@ -96,10 +105,10 @@ export default function ProjectCard() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#030014] via-transparent to-transparent opacity-60 pointer-events-none" />
               
-              {/* Floating Status Tag */}
+              {/* Floating Status Tag - Khẳng định chất lượng hệ thống */}
               <div className="absolute bottom-8 left-8 right-8 p-6 bg-black/40 backdrop-blur-md border border-white/10 rounded-3xl translate-y-4 opacity-0 group-hover/img:translate-y-0 group-hover/img:opacity-100 transition-all duration-500">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-mono text-purple-400 tracking-widest uppercase">System Stability: 99.9%</span>
+                  <span className="text-[10px] font-mono text-purple-400 tracking-widest uppercase tracking-[0.2em]">System Uptime: 99.9%</span>
                   <Zap size={14} className="text-yellow-400 animate-pulse" />
                 </div>
               </div>
