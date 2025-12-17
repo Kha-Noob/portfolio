@@ -43,7 +43,7 @@ export default function ProjectCard() {
               </div>
               <div className="space-y-2">
                 <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500">Contribution</h4>
-                <p className="text-sm text-purple-400 font-black italic uppercase tracking-tight">~70% Core System</p>
+                <p className="text-sm text-purple-400 font-black italic uppercase tracking-tight">~60% Core System</p>
               </div>
             </div>
 
