@@ -85,7 +85,7 @@ export default function ProjectCard() {
                 <Play size={16} fill="white" /> WATCH DEMO
               </a>
               <a 
-                href="https://github.com/Kha-Noob/portfolio.git" 
+                href="https://github.com/Kha-Noob/liteflow.git" 
                 target="_blank" 
                 className="flex items-center gap-3 px-10 py-4 bg-white/5 border border-white/10 text-white rounded-full font-black text-[10px] tracking-widest uppercase hover:bg-white/10 transition-all group/btn"
               >
