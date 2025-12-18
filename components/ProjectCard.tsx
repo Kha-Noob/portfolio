@@ -67,7 +67,7 @@ export default function ProjectCard() {
             <div className="space-y-4">
               <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500">// TECHNICAL STACK</h4>
               <div className="flex flex-wrap gap-2">
-                {["Spring Boot 3.x", "SQL Server", "Groq AI Agent", "VNPAY SDK", "Next.js"].map((tech) => (
+                {["Jakarta EE 11", "SQL Server", "OpenAI API", "VNPAY SDK", "Next.js"].map((tech) => (
                   <span key={tech} className="px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold text-gray-300 hover:text-purple-400 transition-colors">
                     {tech}
                   </span>
