@@ -72,7 +72,7 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-wrap gap-5 items-center">
-            <a href="/docs/CV_TranDuyMinhKha.pdf" download className="group px-8 py-3 bg-white text-black rounded-full font-black text-[10px] tracking-[0.2em] flex items-center gap-2 hover:bg-purple-600 hover:text-white transition-all duration-500 shadow-xl shadow-purple-500/20">
+            <a href="/docs/TranDuyMinhKha_Fullstack_CV.pdf" download className="group px-8 py-3 bg-white text-black rounded-full font-black text-[10px] tracking-[0.2em] flex items-center gap-2 hover:bg-purple-600 hover:text-white transition-all duration-500 shadow-xl shadow-purple-500/20">
               EXPLORE CV <Download size={16} />
             </a>
             <div className="flex items-center gap-3">

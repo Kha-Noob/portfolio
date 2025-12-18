@@ -28,7 +28,7 @@ const experienceData = [
   {
     year: "2024 - 2025",
     title: "Project Lead // LiteFlow ERP",
-    desc: "Xây dựng hệ thống quản lý tích hợp AI Groq và thanh toán VNPAY. Đây là bước nhảy vọt từ tư duy thuật toán sang sản phẩm thực tế."
+    desc: "Xây dựng hệ thống quản lý tích hợp AI Grok và thanh toán VNPAY. Đây là bước nhảy vọt từ tư duy thuật toán sang sản phẩm thực tế."
   },
   {
     year: "2023 - 2024",
